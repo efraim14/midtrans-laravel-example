@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/snap', 'MidtransController@snap');
+Route::get('/pay', 'MidtransController@pay')->name('pay');
+
+Route::post('/snap', 'MidtransController@snap')->name('snap');
