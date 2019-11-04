@@ -28,9 +28,9 @@
                 url: '{{route("snap")}}',
                 data: data,
                 type: 'POST',
-                success: function(data) {
+                success: function(dataSnapToken) {
                     // SnapToken acquired from previous step
-                    snap.pay(data, {
+                    snap.pay(dataSnapToken, {
                         // Optional
                         onSuccess: function(result){
                             /* You may add your own js here, this is just example */ document.getElementById('result-json').innerHTML += JSON.stringify(result, null, 2);
